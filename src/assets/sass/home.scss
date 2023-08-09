@@ -1,0 +1,149 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  grid-auto-rows: 192px;
+
+  max-width: 300*4px;
+
+  padding: 15px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  &__container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: solid;
+    border-color: #180000aa;
+    border-width: 2px;
+    background-color: #171717aa;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+
+    // No selecc for no broke the design
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+
+    &.interactive:hover {
+      scale: 1.03;
+      cursor: pointer;
+    }
+
+    &.skills {
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      padding: 2rem;
+      gap: 1.8rem;
+      background-color: hsla(334, 100%, 44%, 0.4);
+
+      @media screen and (min-width: 425px) {
+        padding: 1.5rem;
+        gap: 1.8rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 1rem;
+        gap: 1rem;
+      }
+
+      @media screen and (min-width: 1024px) {
+        padding: 1rem;
+        gap: .5rem;
+      }
+    }
+
+    .href-icon {
+      font-size: 1.25rem;
+      color: #ffffffaa;
+      align-self: flex-end;
+      justify-self: end;
+    }
+
+    &.big {
+      grid-column-end: span 3;
+      grid-row-end: span 2;
+      padding: 0;
+
+      .content {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    &.medium {
+      grid-column-end: span 2;
+      padding: 0;
+
+      //max-width: 580px;
+      .content {
+        display: flex;
+        //justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        h1,
+        p {
+          padding: 0.5rem;
+        }
+      }
+
+      .small__icon {
+        height: 50%;
+        opacity: 0.7;
+      }
+
+    }
+
+    &.small {
+      grid-column-end: span 1;
+      transition: all 0.2s;
+      //max-width: 280px;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .small__icon {
+        height: 50%;
+        opacity: 0.7;
+      }
+
+      svg {
+        height: 100%;
+      }
+
+      .linkedn {
+        color: hsla(208, 100%, 97%, 0.7);
+      }
+
+      .mailto {
+        color: hsla(208, 100%, 97%, 0.7);
+      }
+    }
+  }
+
+}
