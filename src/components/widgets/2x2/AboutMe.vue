@@ -16,28 +16,24 @@ const { spanish } = toRefs(props);
     "
   >
     <div class="content">
-      <h1>
-        👋
-        {{
-          spanish
+      <div style="padding: 1rem;">
+        <h1>
+          {{
+            spanish
             ? "Hola, soy Wladimir Sanvicente"
             : "Hi, I'm Wladimir Sanvicente"
-        }}
-      </h1>
+          }}
+          👋
+        </h1>
+      </div>
       <div style="padding: 1rem">
         <p v-show="spanish" style="font-size: 1.2rem">
-          Soy <b>desarrollador frontend</b> con experiencia en <b>Vue.js</b>.
-          Soy bueno en <b>CSS</b> y <b>HTML</b>, así como en
-          <b>JavaScript.</b> Me encanta aprender cosas nuevas y experimentar con
-          nuevas tecnologías. Tengo buen ojo para los detalles y siempre pongo
-          todo de mi en mi trabajo.
+          <b>Desarrollador Frontend</b> con experiencia en <b>Vue.js</b>, <b>CSS</b>, <b>HTML</b> y <b>JavaScript.</b> 
+          Me gusta experimentar con proyectos nuevos, en especial con video juegos.
         </p>
         <p v-show="!spanish" style="font-size: 1.2rem">
-          I am a <b>frontend developer</b> with experience in <b>Vue.js</b>.
-          I&apos;m good at <b>HTML</b> and <b>CSS</b>, as well as
-          <b>JavaScript</b>. I love learning new things and experimenting with
-          new technologies. I have a good eye for details and I always put my
-          all into my work.
+          <b>Frontend developer</b> with experience in <b>Vue.js</b>, <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>. 
+          I love experimenting with new projects, especially with video games.
         </p>
       </div>
     </div>
