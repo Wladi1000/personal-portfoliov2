@@ -32,7 +32,7 @@ const { spanish } = toRefs(props);
           Me gusta experimentar con proyectos nuevos, en especial con video juegos.
         </p>
         <p v-show="!spanish" style="font-size: 1.2rem">
-          <b>Frontend developer</b> with experience in <b>Vue.js</b>, <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>. 
+          <b>Frontend Developer</b> with experience in <b>Vue.js</b>, <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>. 
           I love experimenting with new projects, especially with video games.
         </p>
       </div>
