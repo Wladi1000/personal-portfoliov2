@@ -46,7 +46,7 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       padding: 2rem;
       gap: 1.8rem;
-      background-color: hsla(334, 100%, 44%, 0.4);
+      background-color: #424549bc;
 
       @media screen and (min-width: 425px) {
         padding: 1.5rem;
@@ -129,7 +129,7 @@
 
       .small__icon {
         height: 50%;
-        opacity: 0.7;
+        opacity: 0.8;
       }
 
       svg {
@@ -137,11 +137,11 @@
       }
 
       .linkedn {
-        color: hsla(208, 100%, 97%, 0.7);
+        color: #f0f8ff;
       }
 
       .mailto {
-        color: hsla(208, 100%, 97%, 0.7);
+        color: #f0f8ff;
       }
     }
   }
