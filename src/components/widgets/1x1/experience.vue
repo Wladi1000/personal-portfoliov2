@@ -7,7 +7,7 @@ const props = defineProps({
 
 const { spanish } = toRefs(props);
 
-const experience = 3;
+const experience = 4;
   
 </script>
 <template>
